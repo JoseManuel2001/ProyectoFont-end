@@ -1,0 +1,57 @@
+body{
+    background-color: #0B0F1A;
+    margin: 0;
+}
+.divHeaderArriba{
+    display: flex;
+    width: 100%;
+    background-color: #02050e;
+    padding: 10px 20px; 
+    flex-direction: row;
+}
+.divConocenos, .divOpciones{
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    justify-content: center;
+    width: 33%;
+    gap: 10px;
+}
+.divNosotros, .divBlog, .divContacto, .divHelp, .divInicioS, .divRegistrarse{ 
+    cursor: pointer;
+}
+.divHelp{
+    color: rgb(59, 59, 153);
+}
+.divSeparador{
+    width: 1px;
+    background-color: #ffffff;
+    height: 15px;
+    align-self: center;
+}
+.divRedesTelefono{
+    display: flex;
+    width: 33%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.divRedes i , .divTelefono i{
+    font-size: 18px;
+    margin: 0 8px;
+    color: #D1D5DB;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.divRedes i:hover {
+    color: #7C3AED; 
+}
+.divTelefono i:hover{
+    color: #7C3AED; 
+}
+.divTelefono{
+    display: flex;
+    color: #D1D5DB;
+    white-space: nowrap;
+}
