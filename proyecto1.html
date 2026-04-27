@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JMTECH COMPONENTES & TECNOLOGIA</title>
     <link rel="stylesheet" href="proyecto1.css">
+    <link rel="icon" href="imagenes/3.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="divHeaderArriba">
             <div class="divConocenos">
                 <div class="divNosotros">Nosotros</div>
@@ -30,8 +31,8 @@
                 </div>
                 <div class="divTelefono">
                     <div class="divSeparador"></div>
-                    <i class="fa-solid fa-phone"></i>
-                    <span>+57 300 123 4567</span>
+                    <i class="fa-solid fa-phone telefonoIcono"></i>
+                    <span class="numeroTel">+52 722 864 9644</span>
                 </div>
             </div>
             <div class="divOpciones">
@@ -45,8 +46,17 @@
         <div class="hero">
             <div class="divHeaderAbajo">
                 <div class="LogoBuscadorOpciones">
+                    <div class="menuReducido"><i class="fa-solid fa-bars"></i></div>
                     <div class="Logo">
                         <img src="/imagenes/1.png" alt="Logo de JMTECH" class="logo">
+                    </div>
+                    <div class="favoCarritoReducido">
+                        <div class="carritoCantidad">
+                            <i class="fa-solid fa-cart-shopping carritoRedIcon"></i>
+                            <div class="detalleCarrito">
+                                <span class="contadorCarrito">0</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="Buscador">
                         <input type="text" placeholder="Buscar productos..." class="inputBusqueda">
@@ -54,7 +64,7 @@
                     </div>
                     <div class="userLikeCarro">
                         <div><i class="fa-regular fa-user"></i></div>
-                        <div><i class="fa-regular fa-heart"></i></div>
+                        <div class="iconFavoritos"><i class="fa-regular fa-heart"></i></div>
                         <div class="divSeparador2"></div>
                         <div class="carritoCantidad">
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -211,11 +221,8 @@
             </div>
         </div>
         <section class="SeccionContenido">
-             <div>
-                    <div>
-                        
-                    </div>
-                </div>
+            <div>
+            </div>
             <article class="BanerAnunciosArriba">
                 <div class="banner-content">
                     <span class="tag">NUEVO LANZAMIENTO</span>
@@ -223,7 +230,7 @@
                         ASUS ROG <br>
                         <span class="efectoLetras">STRIX</span> RTX 4090
                     </h1>
-                    <p>
+                    <p class="parrafoBanner">
                         Rendimiento extremo para gamers y creadores de contenido sin límites.
                     </p>
                     <ul class="caracteristicas">
@@ -249,11 +256,199 @@
                     <div class="banner-content3"></div>
                 </article>
             </article>
-            <article class="opcionesContenido"></article>
-            <article class="productosDestacados"></article>
-            <article class="BanerAnunciosAbajo"></article>
+            <section class="beneficios">
+                <div class="beneficio">
+                    <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <h4>ENVÍO GRATIS</h4>
+                        <p>En compras mayores a $1,999</p>
+                    </div>
+                </div>
+
+                <div class="beneficio">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <h4>GARANTÍA TOTAL</h4>
+                        <p>Productos 100% originales</p>
+                    </div>
+                </div>
+
+                <div class="beneficio">
+                    <i class="fa-solid fa-lock"></i>
+                    <div>
+                        <h4>COMPRA SEGURA</h4>
+                        <p>Tus datos protegidos</p>
+                    </div>
+                </div>
+
+                <div class="beneficio">
+                    <i class="fa-solid fa-headset"></i>
+                    <div>
+                        <h4>SOPORTE ESPECIALIZADO</h4>
+                        <p>Te ayudamos a elegir</p>
+                    </div>
+                </div>
+            </section>
+            <section class="productos">
+                <div class="productos-header">
+                    <h2>PRODUCTOS</h2>
+                    <span class="ver-todos">VER TODOS →</span>
+                </div>
+
+                <div class="grid-productos">
+
+                    <article class="card-producto">
+                        <span class="badge nuevo">NUEVO</span>
+
+                        <img src="imagenes/procesador.png" alt="Ryzen 7 7800X3D">
+
+                        <h3>AMD Ryzen 7 7800X3D</h3>
+                        <p>Procesador AMD Ryzen 7 7800X3D</p>
+
+                        <div class="precio-carrito">
+                            <span class="precio">$10,999.00</span>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card-producto">
+                        <span class="badge oferta">OFERTA!</span>
+
+                        <img src="imagenes/motherboard.png" alt="Motherboard ASUS TUF Gaming B650-PLUS">
+
+                        <h3>ASUS TUF Gaming B650-PLUS</h3>
+                        <p>Motherboard ATX AM5</p>
+
+                        <div class="precio-carrito">
+                            <span class="precio">$4,299.00</span>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card-producto">
+                        <span class="badge nuevo">NUEVO</span>
+
+                        <img src="imagenes/ram.png" alt="Corsair Vengeance LPX 32GB">
+
+                        <h3>Corsair Vengeance LPX 32GB</h3>
+                        <p>(2 x 16GB) DDR5 6000MHz</p>
+
+                        <div class="precio-carrito">
+                            <span class="precio">$2,999.00</span>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card-producto">
+                        <span class="badge nuevo">NUEVO</span>
+
+                        <img src="imagenes/gabinete.png" alt="Gabinete Lian Li Dynamic">
+
+                        <h3>Lian Li 011 Dynamic EVO</h3>
+                        <p>Gabinete Mid-Tower</p>
+
+                        <div class="precio-carrito">
+                            <span class="precio">$3,699.00</span>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card-producto">
+                        <span class="badge oferta">OFERTA!</span>
+
+                        <img src="imagenes/fuentepoder.png" alt="Fuente de Poder MSI">
+
+                        <h3>MSI MPG AB50G PCIES</h3>
+                        <p>Fuente de Poder 850W 80+ Gold</p>
+
+                        <div class="precio-carrito">
+                            <span class="precio">$2,599.00</span>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card-producto">
+                        <span class="badge oferta">OFERTA!</span>
+
+                        <img src="imagenes/discoduro.png" alt="Disco Duro WD Black 2TB">
+
+                        <h3>WD Black 2TB</h3>
+                        <p>Disco Duro 2TB</p>
+
+                        <div class="precio-carrito">
+                            <span class="precio">$1,099.00</span>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="BanerAnunciosAbajo">
+            </section>
+            <footer class="footer">
+
+                <div class="footer-logo">
+                    <img src="imagenes/3.png" alt="JMTECH">
+                    <p>Componentes y Tecnología © 2026</p>
+                </div>
+
+                <div class="footer-contenido">
+
+                    <div class="footer-col">
+                        <h4>Nosotros</h4>
+                        <ul>
+                            <li>Pride</li>
+                            <li>Configurar</li>
+                            <li>Nosotros</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li>Contacto</li>
+                            <li>Preguntas frecuentes</li>
+                            <li>Aviso legal</li>
+                            <li>Términos y condiciones</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Contacto</h4>
+                        <p><i class="fa-solid fa-phone"></i> +52 722 864 9644</p>
+                        <p><i class="fa-solid fa-envelope"></i> ventas@jmtech.mx</p>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Ubicación</h4>
+                        <p>Huixquilucan, Edo. Mex, México</p>
+                        <p>El Potrero #12, 52767</p>
+                    </div>
+
+                </div>
+                <div class="footer-redes">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+
+            </footer>
+        </section>
     </div>
-    </section>
 </body>
 
 </html>
