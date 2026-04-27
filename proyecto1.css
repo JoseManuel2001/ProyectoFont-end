@@ -1,57 +1,408 @@
-body{
-    background-color: #0B0F1A;
+body {
+    background: linear-gradient(to right, #0a0d16, #0B0F1A);
     margin: 0;
+    height: 100vh;
 }
-.divHeaderArriba{
+
+.divHeaderArriba {
     display: flex;
     width: 100%;
     background-color: #02050e;
-    padding: 10px 20px; 
+    padding: 10px 40px;
     flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: #1e2027 2px solid;
 }
-.divConocenos, .divOpciones{
+
+.divConocenos,
+.divOpciones {
     display: flex;
     flex-direction: row;
     color: aliceblue;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     justify-content: center;
-    width: 33%;
     gap: 10px;
 }
-.divNosotros, .divBlog, .divContacto, .divHelp, .divInicioS, .divRegistrarse{ 
+
+.divNosotros,
+.divBlog,
+.divContacto,
+.divHelp,
+.divInicioS,
+.divRegistrarse {
     cursor: pointer;
 }
-.divHelp{
+
+.divHelp {
     color: rgb(59, 59, 153);
 }
-.divSeparador{
+
+.divSeparador {
     width: 1px;
-    background-color: #ffffff;
+    background-color: #ffffff2a;
     height: 15px;
     align-self: center;
 }
-.divRedesTelefono{
+.divSeparador2 {
+    width: 1px;
+    background-color: #ffffff2a;
+    height: 25px;
+    align-self: center;
+}
+.divRedesTelefono {
     display: flex;
-    width: 33%;
     justify-content: flex-end;
     align-items: center;
 }
-.divRedes i , .divTelefono i{
-    font-size: 18px;
+
+.divRedes i,
+.divTelefono i {
+    font-size: 15px;
     margin: 0 8px;
     color: #D1D5DB;
     cursor: pointer;
     transition: 0.3s;
 }
+
 .divRedes i:hover {
-    color: #7C3AED; 
+    color: #7C3AED;
 }
-.divTelefono i:hover{
-    color: #7C3AED; 
+
+.divTelefono i:hover {
+    color: #7C3AED;
 }
-.divTelefono{
+
+.divTelefono {
     display: flex;
     color: #D1D5DB;
     white-space: nowrap;
+}
+
+.hero {
+    background-image: url("imagenes/fondoCircuitos.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 135px;
+    position: relative;
+}
+
+.divHeaderAbajo {
+    display: flex;
+    width: 100%;
+    padding: 0px 40px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-direction: column;
+    background: #0b0e18ef;
+    color: white;
+}
+
+.LogoBuscadorOpciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.Buscador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.userLikeCarro {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.userLikeCarro i {
+    font-size: 25px;
+    color: #D1D5DB;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inputBusqueda {
+    display: flex;
+    height: 30px;
+    background-color: #181b24d0;
+    border-radius: 8px 0px 0px 8px;
+    font-size: 12px;
+    color: #d7d9db;
+    padding: 0 15px;
+    border: 0.01px solid #d7d9db2c;
+    width: 400px;
+}
+.fondoLupa {
+    background: linear-gradient(135deg, #5b3aed, #3B82F6);
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    padding: 8px 13px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lupaBuscador{
+    color: #D1D5DB;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.carritoCantidad{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.detalleCarrito{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    gap: 2px;
+}
+.contadorCarrito{
+    background-color: #7C3AED;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divApartados {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.divPrincipal {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.divCategoriasAyuda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divCategorias{
+    display: flex;
+    flex-direction: column;
+    border: #1e2027 2px solid;
+    border-radius: 8px;
+        box-sizing: border-box;
+}
+.divCategTitulo{
+    display: flex;
+    color: #D1D5DB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #5b3aed, #3B82F6);
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+.divTextCat{
+    display: flex;
+    color: #D1D5DB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    align-items: center;
+    gap: 10px;
+}
+.divCateg{
+    display: flex;
+    color: #D1D5DB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: #1e2027 2px solid;
+    background-color: #1e202754;
+    justify-content: space-between;
+}
+.divCateg:hover {
+     background: linear-gradient(135deg, #3B82F6, #5b3aed);
+    box-shadow: 10px 5px 15px rgba(55, 0, 255, 0.3);
+}
+.ofertasIcon{
+    color: red;
+}
+.divAyudaBoton{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: #1e2027 2px solid;
+    border-radius: 8px;
+     box-sizing: border-box;
+     padding: 10px 20px;
+}
+.divAyuda{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.divIconoAyuda{
+    color: #7C3AED;
+    font-size: 30px;
+}
+.divTextoAyuda{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: #D1D5DB;
+}
+.tituloAyuda{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.textoAyuda{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.divBotonAyuda{
+    background: linear-gradient(135deg, #5b3aed, #3B82F6);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divBotonAyuda:hover {
+    background: linear-gradient(135deg, #3B82F6, #5b3aed);
+    box-shadow: 10px 5px 15px rgba(59, 59, 153, 0.3);
+}
+.textoBotonAyuda{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.SeccionContenido {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    flex: 1;
+}
+.BanerAnunciosArriba {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("imagenes/grafica.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 1px solid #1e2027;
+    border-radius: 12px;
+    padding: 20px;
+
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.BanerAnunciosArriba:hover {
+    transform: translateY(-5px) scale(1.01); 
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(124, 58, 237, 0.3); 
+}
+.banner-content {
+ display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+.caracteristicas {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+}
+.iconoTarjeta{
+    color: #7C3AED;
+    font-size: 15px;
+}
+.btn-comprar{
+    background: linear-gradient(135deg, #5b3aed, #3B82F6);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.btn-comprar:hover {
+    background: linear-gradient(135deg, #3B82F6, #5b3aed);
+    box-shadow: 10px 5px 15px rgba(59, 59, 153, 0.3);
+}
+.tituloBanerArriba{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+@media (max-width: 736px) {
+    .divOpciones {
+        display: none;
+    }
+}
+.tag {
+    display: inline-block;
+    color: rgb(94, 91, 91);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.efectoLetras{
+    background: linear-gradient(135deg, #7ebee2, #2f00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 560px) {
+    .divRedesTelefono {
+        display: none;
+    }
+    .divHeaderArriba {
+        justify-content: center;
+    }
 }
