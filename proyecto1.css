@@ -203,7 +203,6 @@ body {
 .carritoCantidad {
     display: flex;
     flex-direction: row;
-    gap: 5px;
 }
 
 .detalleCarrito {
@@ -234,16 +233,23 @@ body {
     font-size: 13px;
     margin-bottom: 5px;
 }
-.Apartado{
-    color: #D1D5DB;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 1px solid transparent;
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
-.Apartado:hover{
-    border-bottom: 1px solid #7C3AED;
+.Apartado {
+    padding: 5px 10px;
 }
-
+.Apartado a {
+    text-decoration: none;
+    color: inherit; 
+    display: block; 
+}
+.Apartado:hover {
+    border-bottom: #7C3AED 1px solid;
+}
 .divPrincipal {
     display: flex;
     flex-direction: row;
@@ -308,7 +314,7 @@ body {
 }
 
 .ofertasIcon {
-    color: red;
+    color: #e71414;
 }
 
 .divAyudaBoton {
@@ -375,7 +381,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 40px;
+    padding: 0px 40px;
     box-sizing: border-box;
     flex: 1;
 }
@@ -394,8 +400,6 @@ body {
 
     border: 1px solid #1e2027;
     border-radius: 12px;
-    padding: 20px;
-
     overflow: hidden;
     transition: all 0.4s ease;
 }
@@ -582,6 +586,12 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+.tituloProducto {
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
 
 .nuevo {
     background: #7C3AED;
@@ -589,11 +599,6 @@ body {
 
 .oferta {
     background: #e71414;
-}
-.card-producto h3 {
-    font-size: 13px;
-    color: white;
-    margin: 0;
 }
 
 .card-producto p {
@@ -707,6 +712,96 @@ body {
 .footer-redes i:hover {
     color: #7C3AED;
 }
+.banner-doble {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.banner-item {
+    position: relative;
+    border-radius: 12px;
+    padding: 30px;
+    color: white;
+    overflow: hidden;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-izq {
+    display: flex;
+    flex: 1 1 300px;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+.banner-der {
+    display: flex;
+    flex: 1 1 300px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+}
+.banner-audifonos {
+    display: flex;
+    flex: 1 1 300px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('imagenes/audifonos.png') center/cover no-repeat;
+}
+
+.contenido {
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-item h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.banner-item p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.btn-banner {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #8a2be2;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn-banner:hover {
+    background: #8a2be2;
+}
+
+.banner-item::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(138,43,226,0.2) 0%, transparent 60%);
+    top: -50%;
+    left: -50%;
+}
+.banner-izq {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('imagenes/pc-gamer.png') center/cover no-repeat;
+}
+.banner-der {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('imagenes/tarjetasBaner.png') center/cover no-repeat;
+}
+.banner-izq:hover, .banner-der:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
+    animation: ease-in 0.3s       ;
+}
 @media (max-width: 560px) {
     .divRedesTelefono {
         display: none;
@@ -753,10 +848,6 @@ body {
         color: #D1D5DB;
         cursor: pointer;
         transition: 0.3s;
-    }
-
-    .SeccionContenido {
-        padding: 0px;
     }
 
     .divPrincipal {

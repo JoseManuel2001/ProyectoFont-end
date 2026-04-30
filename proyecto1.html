@@ -43,7 +43,7 @@
                 <div class="divRegistrarse">Registrarse</div>
             </div>
         </div>
-        <div class="hero">
+        <section class="hero">
             <div class="divHeaderAbajo">
                 <div class="LogoBuscadorOpciones">
                     <div class="menuReducido"><i class="fa-solid fa-bars"></i></div>
@@ -76,18 +76,20 @@
                     </div>
                 </div>
                 <nav class="divApartados">
-                    <div class="Apartado">PRODUCTOS</div>
-                    <div class="Apartado">PC GAMER</div>
-                    <div class="Apartado">CONFIGURAR PC</div>
-                    <div class="Apartado">OFERTAS</div>
-                    <div class="Apartado">NOVEDADES</div>
-                    <div class="Apartado">MARCAS</div>
+                    <ul class="menu">
+                        <li class="Apartado"><a href="#">PRODUCTOS</a></li>
+                        <li class="Apartado"><a href="#">PC GAMER</a></li>
+                        <li class="Apartado"><a href="#">CONFIGURAR PC</a></li>
+                        <li class="Apartado"><a href="#">OFERTAS</a></li>
+                        <li class="Apartado"><a href="#">NOVEDADES</a></li>
+                        <li class="Apartado"><a href="#">MARCAS</a></li>
+                    </ul>
                 </nav>
             </div>
-        </div>
+        </section>
     </header>
-    <div class="divPrincipal">
-        <div class="divCategoriasAyuda">
+    <main class="divPrincipal">
+        <aside class="divCategoriasAyuda">
             <div class="divCategorias">
                 <div class="divCategTitulo">
                     <i class="fa-solid fa-bars"></i>
@@ -219,7 +221,7 @@
                     <div class="textoBotonAyuda">Contactar ahora</div>
                 </button>
             </div>
-        </div>
+        </aside>
         <section class="SeccionContenido">
             <div>
             </div>
@@ -291,7 +293,7 @@
             </section>
             <section class="productos">
                 <div class="productos-header">
-                    <h2>PRODUCTOS</h2>
+                    <h2>PRODUCTOS MAS VENDIDOS</h2>
                     <span class="ver-todos">VER TODOS →</span>
                 </div>
 
@@ -302,7 +304,7 @@
 
                         <img src="imagenes/procesador.png" alt="Ryzen 7 7800X3D">
 
-                        <h3>AMD Ryzen 7 7800X3D</h3>
+                        <h3 class="tituloProducto">AMD Ryzen 7 7800X3D</h3>
                         <p>Procesador AMD Ryzen 7 7800X3D</p>
 
                         <div class="precio-carrito">
@@ -318,7 +320,7 @@
 
                         <img src="imagenes/motherboard.png" alt="Motherboard ASUS TUF Gaming B650-PLUS">
 
-                        <h3>ASUS TUF Gaming B650-PLUS</h3>
+                        <h3 class="tituloProducto">ASUS TUF Gaming B650-PLUS</h3>
                         <p>Motherboard ATX AM5</p>
 
                         <div class="precio-carrito">
@@ -334,7 +336,7 @@
 
                         <img src="imagenes/ram.png" alt="Corsair Vengeance LPX 32GB">
 
-                        <h3>Corsair Vengeance LPX 32GB</h3>
+                        <h3 class="tituloProducto">Corsair Vengeance LPX 32GB</h3>
                         <p>(2 x 16GB) DDR5 6000MHz</p>
 
                         <div class="precio-carrito">
@@ -350,7 +352,7 @@
 
                         <img src="imagenes/gabinete.png" alt="Gabinete Lian Li Dynamic">
 
-                        <h3>Lian Li 011 Dynamic EVO</h3>
+                        <h3 class="tituloProducto">Lian Li 011 Dynamic EVO</h3>
                         <p>Gabinete Mid-Tower</p>
 
                         <div class="precio-carrito">
@@ -366,7 +368,7 @@
 
                         <img src="imagenes/fuentepoder.png" alt="Fuente de Poder MSI">
 
-                        <h3>MSI MPG AB50G PCIES</h3>
+                        <h3 class="tituloProducto">MSI MPG AB50G PCIES</h3>
                         <p>Fuente de Poder 850W 80+ Gold</p>
 
                         <div class="precio-carrito">
@@ -382,7 +384,7 @@
 
                         <img src="imagenes/discoduro.png" alt="Disco Duro WD Black 2TB">
 
-                        <h3>WD Black 2TB</h3>
+                        <h3 class="tituloProducto">WD Black 2TB</h3>
                         <p>Disco Duro 2TB</p>
 
                         <div class="precio-carrito">
@@ -394,61 +396,82 @@
                     </article>
                 </div>
             </section>
-            <section class="BanerAnunciosAbajo">
+            <section class="banner-doble">
+                <div class="banner-item banner-izq">
+                    <div class="contenido">
+                        <h2>ARMA TU PC IDEAL</h2>
+                        <p>Elige tus componentes y nosotros la ensamblamos por ti</p>
+                        <a href="#" class="btn-banner">CONFIGURAR AHORA</a>
+                    </div>
+                </div>
+                <div class="banner-item banner-der">
+                    <div class="contenido">
+                        <h2>HASTA 12 MSI</h2>
+                        <p>En productos seleccionados con tarjetas participantes</p>
+                        <a href="#" class="btn-banner">VER PRODUCTOS</a>
+                    </div>
+                </div>
+                <div class="banner-item banner-audifonos">
+                    <div class="contenido">
+                        <h2>AUDIO GAMING PRO</h2>
+                        <p>Sumérgete en el juego con sonido envolvente de alta precisión</p>
+                        <a href="#" class="btn-banner">VER ACCESORIOS</a>
+                    </div>
+                </div>
             </section>
-            <footer class="footer">
-
-                <div class="footer-logo">
-                    <img src="imagenes/3.png" alt="JMTECH">
-                    <p>Componentes y Tecnología © 2026</p>
-                </div>
-
-                <div class="footer-contenido">
-
-                    <div class="footer-col">
-                        <h4>Nosotros</h4>
-                        <ul>
-                            <li>Pride</li>
-                            <li>Configurar</li>
-                            <li>Nosotros</li>
-                            <li>Blog</li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Ayuda</h4>
-                        <ul>
-                            <li>Contacto</li>
-                            <li>Preguntas frecuentes</li>
-                            <li>Aviso legal</li>
-                            <li>Términos y condiciones</li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Contacto</h4>
-                        <p><i class="fa-solid fa-phone"></i> +52 722 864 9644</p>
-                        <p><i class="fa-solid fa-envelope"></i> ventas@jmtech.mx</p>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Ubicación</h4>
-                        <p>Huixquilucan, Edo. Mex, México</p>
-                        <p>El Potrero #12, 52767</p>
-                    </div>
-
-                </div>
-                <div class="footer-redes">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-tiktok"></i>
-                </div>
-
-            </footer>
         </section>
-    </div>
+    </main>
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <img src="imagenes/3.png" alt="JMTECH">
+            <p>Componentes y Tecnología © 2026</p>
+        </div>
+
+        <div class="footer-contenido">
+
+            <div class="footer-col">
+                <h4>Nosotros</h4>
+                <ul>
+                    <li>Pride</li>
+                    <li>Configurar</li>
+                    <li>Nosotros</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li>Contacto</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Aviso legal</li>
+                    <li>Términos y condiciones</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-phone"></i> +52 722 864 9644</p>
+                <p><i class="fa-solid fa-envelope"></i> ventas@jmtech.mx</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ubicación</h4>
+                <p>Huixquilucan, Edo. Mex, México</p>
+                <p>El Potrero #12, 52767</p>
+            </div>
+
+        </div>
+        <div class="footer-redes">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+
+    </footer>
 </body>
 
 </html>
